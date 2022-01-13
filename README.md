@@ -1,6 +1,6 @@
 <br>
 
-<img src="https://github.com/nazianafis/Resources/blob/main/TTT/ttt-1.gif" alt="header" align="right" width="200"/>
+<img src="https://github.com/nazianafis/Resources/blob/main/TTT/ttt-1.gif" alt="header" align="right" width="200" />
 
 # Tic-Tac-Toe
 
@@ -17,3 +17,7 @@ A combinatorics study of the game shows that when "X" makes the first move, ever
 - 91 distinct positions are won by (X)
 - 44 distinct positions are won by (O)
 - 03 distinct positions are drawn
+
+<br> 
+
+< WORK IN PROGRESS >
