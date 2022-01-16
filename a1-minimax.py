@@ -111,7 +111,7 @@ class TicTacToe():
             return 2, 2
         else:
             return None, None
-    def hard_game(self):
+    def play_game(self):
         tic = Board()
         tic.printBoard()
         while not tic.Over():
@@ -143,7 +143,7 @@ class TicTacToe():
             print("Result--> Draw.")
     def main(self):
         print("--- TIC-TAC-TOE ---")
-        self.hard_game()
+        self.play_game()
 
 Obj = TicTacToe()
 Obj.main()
