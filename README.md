@@ -11,13 +11,21 @@ Tic-Tac-Toe is a two player game where each player takes turns marking the space
 
 ---
 
-When considering only the state of the board, and after taking into account board symmetries (i.e. rotations and reflections), there are only 138 terminal board positions.
+When considering only the state of the board, and after taking into account board symmetries (i.e. rotations and reflections), there are only 138 terminal board positions. A combinatorics study of the game shows that when "X" makes the first move, every time the game outcomes are as follows: 91 distinct positions are won by (X), 44 distinct positions are won by (O), and 03 distinct positions are drawn.
 
-A combinatorics study of the game shows that when "X" makes the first move, every time the game outcomes are as follows:
-- 91 distinct positions are won by (X)
-- 44 distinct positions are won by (O)
-- 03 distinct positions are drawn
 
-<br> 
+### In this repository, I will be implementing the game of Tic Tac Toe through multiple approaches.
+
+<br>
+
+| S.no. | APPROACH      | CODE  | QUICK LOOK |
+|------:|---------------|-------|------------|
+| 1.    | Minimax, CLI  | [Code](https://github.com/nazianafis/Tic-Tac-Toe/blob/main/a1-minimax.py) | [Image](https://github.com/nazianafis/Tic-Tac-Toe/blob/main/img/a1/a1.png) |
+| 2.    | GUI, two player | [Code]() | [Image]() |
+| 3.    | Minimax, GUI  | [Code]() | [Image]() |
+| 4.    | Reinforcement Learning | [Code]() | [Image]() |
+
+<br>
+<br>
 
 < WORK IN PROGRESS >
