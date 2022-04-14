@@ -18,13 +18,12 @@ When considering only the state of the board, and after taking into account boar
 
 <br>
 
-| S.no. | APPROACH      | CODE  | QUICK LOOK |
-|------:|---------------|-------|------------|
-| 1.    | Minimax, CLI  | [Code](https://github.com/nazianafis/Tic-Tac-Toe/blob/main/a1-minimax.py) | [Image](https://github.com/nazianafis/Tic-Tac-Toe/blob/main/img/a1/a1.png) |
-| 2.    | GUI, two player | [Code]() | [Image]() |
-| 3.    | Minimax, GUI  | [Code]() | [Image]() |
-| 4.    | Reinforcement Learning | [Code]() | [Image]() |
-
+| S.no. | APPROACH      | CODE  |
+|------:|---------------|-------|
+| 1.    | Minimax, CLI  | [Link](https://github.com/nazianafis/Tic-Tac-Toe/blob/main/a1-minimax.py) |
+| 2.    | GUI, two player | [Link]() |
+| 3.    | Minimax, GUI  | [Link]() | 
+| 4.    | Reinforcement Learning | [Link](https://github.com/nazianafis/Tic-Tac-Toe/blob/main/ttt_rl.ipynb) |
 <br>
 <br>
 
