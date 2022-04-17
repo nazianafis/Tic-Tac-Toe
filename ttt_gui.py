@@ -2,9 +2,6 @@
 import pygame as pg,sys
 from pygame.locals import *
 import time
-from ttt_rl import *
-
-chance = 0
 
 # Initialize global variables
 XO = 'x'
@@ -26,9 +23,9 @@ screen = pg.display.set_mode((width, height+100),0,32)
 pg.display.set_caption("Tic Tac Toe")
 
 # Loading the images
-opening = pg.image.load('images/ttt_blank.jpg')
-x_img = pg.image.load('images/xxx.jpg')
-o_img = pg.image.load('images/oo.jpg')
+opening = pg.image.load('img/ttt_blank.jpg')
+x_img = pg.image.load('img/xxx.jpg')
+o_img = pg.image.load('img/oo.jpg')
 
 # Resizing images
 x_img = pg.transform.scale(x_img, (80,80))
@@ -124,7 +121,7 @@ def drawXO(row,col):
     if col==3:
         posy = height/3*2 + 30
     TTT[row-1][col-1] = XO
-    if(chance % 2 == 0):
+    if(XO == 'x'):
         screen.blit(x_img,(posy,posx))
         XO= 'o'
     else:
@@ -135,7 +132,6 @@ def drawXO(row,col):
     
 
 def userClick():
-    global s
     # Get coordinates of mouse click
     x,y = pg.mouse.get_pos()
 
@@ -164,12 +160,6 @@ def userClick():
         global XO
         
         # Draw the x or o on screen
-        # here users draw on the board row and col according to x and o
-        p2_action = (row-1, col-1)
-        s.updateState(p2_action)
-        board_hash = s.getHash()
-        s.p2.addState(board_hash)
-
         drawXO(row,col)
         check_win()
         
@@ -185,22 +175,6 @@ def reset_game():
     TTT = [[None]*3,[None]*3,[None]*3]
     
 
-p1 = Player("p1")
-p2 = Player("p2")
-
-s = State(p1,p2)
-print("Training...")
-s.play(100)
-
-p1.savePolicy()
-p2.savePolicy()
-
-p1.loadPolicy("policy_p1")
-
-p2 = HumanPlayer("human")
-
-s = State(p1, p2)
-
 game_opening()
 
 # Run the game loop forever
@@ -209,24 +183,11 @@ while(True):
         if event.type == QUIT:
             pg.quit()
             sys.exit()
-        elif event.type == MOUSEBUTTONDOWN and chance % 2 != 0:
+        elif event.type == MOUSEBUTTONDOWN:
             
             userClick()
             if(winner or draw):
                 reset_game()
-            chance += 1
-        elif chance % 2 == 0:
-            positions = s.availablePositions()
-            p1_action = s.p1.chooseAction(positions, s.board, s.playerSymbol)
-
-            s.updateState(p1_action)
-            board_hash = s.getHash()
-            s.p1.addState(board_hash)
-            print(type(p1_action), p1_action)
-            drawXO(p1_action[0]+1, p1_action[1]+1)
-            if(winner or draw):
-                reset()
-            chance += 1
             
     pg.display.update()
     CLOCK.tick(fps)
