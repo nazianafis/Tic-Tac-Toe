@@ -23,6 +23,7 @@ When considering only the state of the board, and after taking into account boar
 | 1.    | MinMax, CLI  | [Link](https://github.com/nazianafis/Tic-Tac-Toe/blob/main/ttt_mm.ipynb) |
 | 2.    | GUI, two player | [Link](https://github.com/nazianafis/Tic-Tac-Toe/blob/main/ttt_gui.py), [Demo](https://raw.githubusercontent.com/nazianafis/Tic-Tac-Toe/main/ttt_gui.mp4) |
 | 3.    | Reinforcement Learning, CLI | [Link](https://github.com/nazianafis/Tic-Tac-Toe/blob/main/ttt_rl.ipynb) |
+| 4.    | Reinforcement Learning, GUI | [Link](https://github.com/nazianafis/Tic-Tac-Toe/blob/main/ttt_gui_rl.py), [Demo](https://raw.githubusercontent.com/nazianafis/Tic-Tac-Toe/main/ttt_gui_rl.mp4) |
 <br>
 <br>
 
