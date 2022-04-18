@@ -15,17 +15,17 @@ line_color = (2,2,2)
 
 # Initialize RL Variables
 
-# Uncomment to train the model and store in pickle file.
-#p1 = Player("p1")
-#p2 = Player("p2")
-#
-#state = State(p1, p2)
-#print("TRAINING...")
-#state.play(50000)
-#p1.savePolicy()
-#p2.savePolicy()
+# Train the model and store in pickle file.
+p1 = Player("p1")
+p2 = Player("p2")
 
-# Loading in the computer.
+state = State(p1, p2)
+print("TRAINING...")
+state.play(50000)
+p1.savePolicy()
+p2.savePolicy()
+
+# Load the policy
 p1 = Player("computer", exp_rate=0)
 p1.loadPolicy("policy_p1")
 
