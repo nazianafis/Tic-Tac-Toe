@@ -25,4 +25,36 @@ Tic-Tac-Toe is a two player game where each player takes turns marking the space
 <br>
 <br>
 
+### To run the GUI RL Tic-Tac-Toe program: 
+
+1. Clone the repository and move to the downloaded folder:
+``` 
+    $  git clone https://github.com/nazianafis/Tic-Tac-Toes
+```
+
+```
+    $  cd Tic-Tac-Toes
+```
+
+2. Run `ttt_gui_rl.py`:
+```
+    $ python ttt_gui_rl.py
+```
+
+3. Wait for the agent to train and its policy to save and load.
+
+4. The PyGame window will open up. Enjoy the gameplay!
+
+<br>
+<br>
+
+### Acknowledgements
+
+* Reinforcement Learning : An Introduction, book [by Sutton and Barto](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf).
+* [samsepi0x0](https://github.com/samsepi0x0)
+
+---
+
+
+
 < WORK IN PROGRESS >
