@@ -170,9 +170,10 @@ def reset_game():
     time.sleep(3)
     XO = 'x'
     draw = False
-    game_opening()
     winner=None
     TTT = [[None]*3,[None]*3,[None]*3]
+    game_opening()
+
     
 
 game_opening()
