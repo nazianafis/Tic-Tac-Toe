@@ -54,7 +54,7 @@ x_img = pg.transform.scale(x_img, (80,80))
 o_img = pg.transform.scale(o_img, (80,80))
 opening = pg.transform.scale(opening, (width, height+100))
 
-# no change in this function.
+
 def game_opening():
     screen.blit(opening,(0,0))
     pg.display.update()
@@ -69,7 +69,7 @@ def game_opening():
     pg.draw.line(screen,line_color,(0,height/3*2),(width, height/3*2),7)
     draw_status()
     
-# no change here also.
+
 def draw_status():
     global draw
 
@@ -89,7 +89,7 @@ def draw_status():
     screen.blit(text, text_rect)
     pg.display.update()
 
-#no changes here
+
 def check_win():
     global TTT, winner, draw
 
