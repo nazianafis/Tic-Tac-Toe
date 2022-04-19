@@ -25,7 +25,7 @@ Tic-Tac-Toe is a two player game where each player takes turns marking the space
 <br>
 <br>
 
-### To run the GUI RL Tic-Tac-Toe program: 
+### To run the GUI version of Tic-Tac-Toe program with Reinforcement Learning: 
 
 1. Clone the repository and move to the downloaded folder:
 ``` 
