@@ -199,8 +199,6 @@ def userClick():
 
         if(row and col and TTT[row-1][col-1] is None):
             
-            # Draw the x or o on screen
-            ############################################################### only if x0 is o, else no user input.
             p2_action = (row-1, col-1)
 
             state.updateState(p2_action)
