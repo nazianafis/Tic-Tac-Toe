@@ -12,7 +12,7 @@ Tic-Tac-Toe is a two player game where each player takes turns marking the space
 ---
 
 
-#### In this repository, I will be implementing the game of Tic-Tac-Toe through multiple approaches.
+#### In this repository, I've implemented the game of Tic-Tac-Toe via multiple approaches.
 
 <br>
 
@@ -53,8 +53,3 @@ Tic-Tac-Toe is a two player game where each player takes turns marking the space
 * Reinforcement Learning : An Introduction, book [by Sutton and Barto](https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf).
 * [samsepi0x0](https://github.com/samsepi0x0)
 
----
-
-
-
-< WORK IN PROGRESS >
