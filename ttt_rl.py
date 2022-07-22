@@ -1,23 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# # Tic-Tac-Toe
-# ## Implementation of the popular game using reinforcement learning. <br>
-# Objective:                                                                         
-# 1. Train two agents to play against each other and save their policy.
-# 2. Load the policy and make the agent play against a human.
-# ---
-# ---
-
-# In[7]:
-
 
 # Import Libraries
 import numpy as np
 import pickle
-
-
-# In[8]:
 
 
 # Define a 3x3 board
@@ -30,9 +14,6 @@ BOARD_COLS = 3
 #     - p1 uses the symbol 1
 #     - p2 uses the symbol 2
 # - Vacant position is denoted by 0
-
-# In[9]:
-
 
 class State:
     def __init__(self, p1, p2):
@@ -213,9 +194,6 @@ class State:
         print('-------------')    
 
 
-# In[10]:
-
-
 class Player:
     def __init__(self, name, exp_rate=0.3):
         self.name = name
@@ -272,9 +250,6 @@ class Player:
         fr.close()
 
 
-# In[11]:
-
-
 class HumanPlayer:
     def __init__(self, name):
         self.name = name 
@@ -319,48 +294,3 @@ class HumanPlayer:
             
     def reset(self):
         pass
-
-
-# ### Training
-
-# In[12]:
-
-'''
-p1 = Player("p1")
-p2 = Player("p2")
-
-st = State(p1, p2)
-print("training...")
-st.play(50000)
-
-
-# In[13]:
-
-
-# Save policy
-p1.savePolicy()
-p2.savePolicy()
-
-
-# In[14]:
-
-
-# Load policy
-p1.loadPolicy("policy_p1")
-
-
-# # Human vs Computer
-
-# In[16]:
-
-
-p1 = Player("computer", exp_rate=0)
-p1.loadPolicy("policy_p1")
-
-p2 = HumanPlayer("human")
-
-st = State(p1, p2)
-st.play2()
-'''
-
-# #### 
